@@ -6,7 +6,7 @@ import PrimaryHeading from './components/PrimaryHeading/PrimaryHeading';
 function App() {
   return (
     <div className="App">
-      <PrimaryHeading text="Author's page" />
+      <PrimaryHeading text="Authors" />
       <AuthorsGrid />
       <AuthorsPage />
     </div>

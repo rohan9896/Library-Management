@@ -31,7 +31,7 @@ function AuthorsPage() {
           <a href="https://www.instagram.com/rohan_gupta94/" target="_blank" rel="noopener noreferrer">
             <img
               alt="instagram"
-              src="https://lh3.googleusercontent.com/proxy/2gbm5v0CfdGsgJDR42BmdcX_YR4a1NatBsU_25T6Puwrye8OOeYRGdNChheFG3q-4xk7mwkyIWNDZVX-p_p5FZud8WXQODnbIdR1W4rT6mkFD6PgYVd1UwQ6R5lhpTqINCOGENkX0jAzsvqoZ8Q2dkzzZNX1"
+              src="https://www.freepnglogos.com/uploads/instagram-logo-png-transparent-0.png"
             />
           </a>
           <a href="https://www.facebook.com/rohang9896" target="_blank" rel="noopener noreferrer">
