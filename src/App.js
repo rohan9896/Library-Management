@@ -1,11 +1,13 @@
 import './App.css';
-import AuthorCard from './components/AuthorCard/AuthorCard';
+import AuthorsGrid from './components/AuthorsGrid/AuthorsGrid';
 import AuthorsPage from './components/AuthorsPage/AuthorsPage';
+import PrimaryHeading from './components/PrimaryHeading/PrimaryHeading';
 
 function App() {
   return (
     <div className="App">
-      <AuthorCard />
+      <PrimaryHeading text="Author's page" />
+      <AuthorsGrid />
       <AuthorsPage />
     </div>
   );
