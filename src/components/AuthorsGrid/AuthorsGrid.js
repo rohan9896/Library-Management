@@ -8,7 +8,7 @@ function AuthorsGrid() {
         <div className="AuthorsGrid">
             {
                 AuthorData.map(author => (
-                    <div><AuthorCard {...author} /></div>
+                    <div key={author.id}><AuthorCard {...author} /></div>
                 ))
             }
         </div>
