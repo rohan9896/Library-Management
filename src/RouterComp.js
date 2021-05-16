@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import AuthorsPage from "./components/AuthorsPage/AuthorsPage";
 import { useData } from "./Context/data-context";
 import BooksGrid from "./components/CardsGrid/BooksGrid";
+import BookPage from "./components/BookPage/BookPage";
 
 export default function RouterComp() {
   const { state } = useData();
@@ -27,6 +28,7 @@ export default function RouterComp() {
         element={<AuthorsPage {...state.clickedAuthor[0]} />}
       />
       <Route path="/book" element={<BooksGrid arrayToBeMapped={state.booksArr} />} />
+      <Route path="/book/:id" element={<BookPage {...state.clickedBook[0]} />} />
     </Routes>
   );
 }

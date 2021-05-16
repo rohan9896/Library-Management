@@ -12,7 +12,7 @@ const BooksData = [
             "min": 1000000000000,
             "max": 9999999999999
         }),
-        bookDescription: faker.lorem.paragraph(8)
+        bookDescription: faker.lorem.paragraph(6)
     },
     {
         id: faker.datatype.uuid(),
@@ -23,7 +23,7 @@ const BooksData = [
             "min": 1000000000000,
             "max": 9999999999999
         }),
-        bookDescription: faker.lorem.paragraph(8)
+        bookDescription: faker.lorem.paragraph(6)
     },
     {
         id: faker.datatype.uuid(),
@@ -34,7 +34,7 @@ const BooksData = [
             "min": 1000000000000,
             "max": 9999999999999
         }),
-        bookDescription: faker.lorem.paragraph(8)
+        bookDescription: faker.lorem.paragraph(6)
     },
     {
         id: faker.datatype.uuid(),
@@ -45,7 +45,7 @@ const BooksData = [
             "min": 1000000000000,
             "max": 9999999999999
         }),
-        bookDescription: faker.lorem.paragraph(8)
+        bookDescription: faker.lorem.paragraph(6)
     },
     {
         id: faker.datatype.uuid(),
@@ -56,7 +56,7 @@ const BooksData = [
             "min": 1000000000000,
             "max": 9999999999999
         }),
-        bookDescription: faker.lorem.paragraph(8)
+        bookDescription: faker.lorem.paragraph(6)
     },
     {
         id: faker.datatype.uuid(),
@@ -67,7 +67,7 @@ const BooksData = [
             "min": 1000000000000,
             "max": 9999999999999
         }),
-        bookDescription: faker.lorem.paragraph(8)
+        bookDescription: faker.lorem.paragraph(6)
     },
     {
         id: faker.datatype.uuid(),
@@ -78,7 +78,7 @@ const BooksData = [
             "min": 1000000000000,
             "max": 9999999999999
         }),
-        bookDescription: faker.lorem.paragraph(8)
+        bookDescription: faker.lorem.paragraph(6)
     },
     {
         id: faker.datatype.uuid(),
@@ -89,7 +89,7 @@ const BooksData = [
             "min": 1000000000000,
             "max": 9999999999999
         }),
-        bookDescription: faker.lorem.paragraph(8)
+        bookDescription: faker.lorem.paragraph(6)
     },
     {
         id: faker.datatype.uuid(),
@@ -100,7 +100,7 @@ const BooksData = [
             "min": 1000000000000,
             "max": 9999999999999
         }),
-        bookDescription: faker.lorem.paragraph(8)
+        bookDescription: faker.lorem.paragraph(6)
     },
     {
         id: faker.datatype.uuid(),
@@ -111,7 +111,7 @@ const BooksData = [
             "min": 1000000000000,
             "max": 9999999999999
         }),
-        bookDescription: faker.lorem.paragraph(8)
+        bookDescription: faker.lorem.paragraph(6)
     },
     {
         id: faker.datatype.uuid(),
@@ -122,7 +122,7 @@ const BooksData = [
             "min": 1000000000000,
             "max": 9999999999999
         }),
-        bookDescription: faker.lorem.paragraph(8)
+        bookDescription: faker.lorem.paragraph(6)
     },
     {
         id: faker.datatype.uuid(),
@@ -133,7 +133,7 @@ const BooksData = [
             "min": 1000000000000,
             "max": 9999999999999
         }),
-        bookDescription: faker.lorem.paragraph(8)
+        bookDescription: faker.lorem.paragraph(6)
     },
     {
         id: faker.datatype.uuid(),
@@ -144,7 +144,7 @@ const BooksData = [
             "min": 1000000000000,
             "max": 9999999999999
         }),
-        bookDescription: faker.lorem.paragraph(8)
+        bookDescription: faker.lorem.paragraph(6)
     },
     {
         id: faker.datatype.uuid(),
@@ -155,7 +155,7 @@ const BooksData = [
             "min": 1000000000000,
             "max": 9999999999999
         }),
-        bookDescription: faker.lorem.paragraph(8)
+        bookDescription: faker.lorem.paragraph(6)
     },
     {
         id: faker.datatype.uuid(),
@@ -166,7 +166,7 @@ const BooksData = [
             "min": 1000000000000,
             "max": 9999999999999
         }),
-        bookDescription: faker.lorem.paragraph(8)
+        bookDescription: faker.lorem.paragraph(6)
     },
     {
         id: faker.datatype.uuid(),
@@ -177,7 +177,7 @@ const BooksData = [
             "min": 1000000000000,
             "max": 9999999999999
         }),
-        bookDescription: faker.lorem.paragraph(8)
+        bookDescription: faker.lorem.paragraph(6)
     }
 ]
 

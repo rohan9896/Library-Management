@@ -1,5 +1,5 @@
 import { createContext, useContext, useReducer } from "react";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import { AuthorData, BooksData } from "../data/authors-books-data";
 
 export const DataContext = createContext();
@@ -7,7 +7,8 @@ export const DataContext = createContext();
 const initialState = {
   booksArr: BooksData,
   authorsArr: AuthorData,
-  clickedAuthor: {},
+  clickedAuthor: [],
+  clickedBook: [],
 };
 
 const reducerFunc = (state, action) => {
@@ -19,6 +20,13 @@ const reducerFunc = (state, action) => {
           (author) => author.id === action.payload
         ),
       };
+    case "OPEN_BOOK_DETAILS":
+      return {
+        ...state,
+        clickedBook: state.booksArr.filter(
+          (book) => book.id === action.payload
+        ),
+      };
     default:
       break;
   }
@@ -27,7 +35,6 @@ const reducerFunc = (state, action) => {
 export default function DataContextProvider({ children }) {
   const [state, dispatch] = useReducer(reducerFunc, initialState);
 
-  let navigate = useNavigate();
   const path = useLocation().pathname.toString();
   const getIdFromUrl = (urlPath) => {
     let id = "";
