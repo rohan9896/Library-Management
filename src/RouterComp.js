@@ -22,13 +22,22 @@ export default function RouterComp() {
           </>
         }
       />
-      <Route path="/author" element={<AuthorsGrid arrayToBeMapped={state.authorsArr} />} />
+      <Route
+        path="/author"
+        element={<AuthorsGrid arrayToBeMapped={state.authorsArr} />}
+      />
       <Route
         path="/author/:id"
         element={<AuthorsPage {...state.clickedAuthor[0]} />}
       />
-      <Route path="/book" element={<BooksGrid arrayToBeMapped={state.booksArr} />} />
-      <Route path="/book/:id" element={<BookPage {...state.clickedBook[0]} />} />
+      <Route
+        path="/book"
+        element={<BooksGrid arrayToBeMapped={state.booksArr} />}
+      />
+      <Route
+        path="/book/:id"
+        element={<BookPage {...state.clickedBook[0]} />}
+      />
     </Routes>
   );
 }
