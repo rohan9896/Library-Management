@@ -9,6 +9,7 @@
 .PrimaryHeading__text {
     font-family: 'Anton', sans-serif;
     font-size: 2.5rem;
+    margin: 0.5rem;
 }
 
 @media screen and (min-width: 768px) {

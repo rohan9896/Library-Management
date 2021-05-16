@@ -11,7 +11,8 @@ const BooksData = [
         isbn: faker.datatype.number({
             "min": 1000000000000,
             "max": 9999999999999
-        }) 
+        }),
+        bookDescription: faker.lorem.paragraph(8)
     },
     {
         id: faker.datatype.uuid(),
@@ -21,7 +22,8 @@ const BooksData = [
         isbn: faker.datatype.number({
             "min": 1000000000000,
             "max": 9999999999999
-        }) 
+        }),
+        bookDescription: faker.lorem.paragraph(8)
     },
     {
         id: faker.datatype.uuid(),
@@ -31,7 +33,8 @@ const BooksData = [
         isbn: faker.datatype.number({
             "min": 1000000000000,
             "max": 9999999999999
-        }) 
+        }),
+        bookDescription: faker.lorem.paragraph(8)
     },
     {
         id: faker.datatype.uuid(),
@@ -41,7 +44,8 @@ const BooksData = [
         isbn: faker.datatype.number({
             "min": 1000000000000,
             "max": 9999999999999
-        }) 
+        }),
+        bookDescription: faker.lorem.paragraph(8)
     },
     {
         id: faker.datatype.uuid(),
@@ -51,7 +55,8 @@ const BooksData = [
         isbn: faker.datatype.number({
             "min": 1000000000000,
             "max": 9999999999999
-        }) 
+        }),
+        bookDescription: faker.lorem.paragraph(8)
     },
     {
         id: faker.datatype.uuid(),
@@ -61,7 +66,8 @@ const BooksData = [
         isbn: faker.datatype.number({
             "min": 1000000000000,
             "max": 9999999999999
-        }) 
+        }),
+        bookDescription: faker.lorem.paragraph(8)
     },
     {
         id: faker.datatype.uuid(),
@@ -71,7 +77,8 @@ const BooksData = [
         isbn: faker.datatype.number({
             "min": 1000000000000,
             "max": 9999999999999
-        }) 
+        }),
+        bookDescription: faker.lorem.paragraph(8)
     },
     {
         id: faker.datatype.uuid(),
@@ -81,7 +88,8 @@ const BooksData = [
         isbn: faker.datatype.number({
             "min": 1000000000000,
             "max": 9999999999999
-        }) 
+        }),
+        bookDescription: faker.lorem.paragraph(8)
     },
     {
         id: faker.datatype.uuid(),
@@ -91,7 +99,8 @@ const BooksData = [
         isbn: faker.datatype.number({
             "min": 1000000000000,
             "max": 9999999999999
-        }) 
+        }),
+        bookDescription: faker.lorem.paragraph(8)
     },
     {
         id: faker.datatype.uuid(),
@@ -101,7 +110,8 @@ const BooksData = [
         isbn: faker.datatype.number({
             "min": 1000000000000,
             "max": 9999999999999
-        }) 
+        }),
+        bookDescription: faker.lorem.paragraph(8)
     },
     {
         id: faker.datatype.uuid(),
@@ -111,7 +121,8 @@ const BooksData = [
         isbn: faker.datatype.number({
             "min": 1000000000000,
             "max": 9999999999999
-        }) 
+        }),
+        bookDescription: faker.lorem.paragraph(8)
     },
     {
         id: faker.datatype.uuid(),
@@ -121,7 +132,8 @@ const BooksData = [
         isbn: faker.datatype.number({
             "min": 1000000000000,
             "max": 9999999999999
-        }) 
+        }),
+        bookDescription: faker.lorem.paragraph(8)
     },
     {
         id: faker.datatype.uuid(),
@@ -131,7 +143,8 @@ const BooksData = [
         isbn: faker.datatype.number({
             "min": 1000000000000,
             "max": 9999999999999
-        }) 
+        }),
+        bookDescription: faker.lorem.paragraph(8)
     },
     {
         id: faker.datatype.uuid(),
@@ -141,7 +154,8 @@ const BooksData = [
         isbn: faker.datatype.number({
             "min": 1000000000000,
             "max": 9999999999999
-        }) 
+        }),
+        bookDescription: faker.lorem.paragraph(8)
     },
     {
         id: faker.datatype.uuid(),
@@ -151,7 +165,8 @@ const BooksData = [
         isbn: faker.datatype.number({
             "min": 1000000000000,
             "max": 9999999999999
-        }) 
+        }),
+        bookDescription: faker.lorem.paragraph(8)
     },
     {
         id: faker.datatype.uuid(),
@@ -161,7 +176,8 @@ const BooksData = [
         isbn: faker.datatype.number({
             "min": 1000000000000,
             "max": 9999999999999
-        }) 
+        }),
+        bookDescription: faker.lorem.paragraph(8)
     }
 ]
 
@@ -172,9 +188,9 @@ const AuthorData = [
         authorName: "JK Rowling",
         authorDescription: faker.lorem.paragraph(5),
         socials: {
-            twitter: "",
-            instagram: "",
-            facebook: ""
+            twitter: "https://twitter.com/rohan_gupta96",
+            instagram: "https://www.instagram.com/rohan_gupta94/",
+            facebook: "https://www.facebook.com/rohang9896"
         },
     },
     {
@@ -183,9 +199,9 @@ const AuthorData = [
         authorName: "Jeff Keller",
         authorDescription: faker.lorem.paragraph(5),
         socials: {
-            twitter: "",
-            instagram: "",
-            facebook: ""
+            twitter: "https://twitter.com/rohan_gupta96",
+            instagram: "https://www.instagram.com/rohan_gupta94/",
+            facebook: "https://www.facebook.com/rohang9896"
         },
     },
     {
@@ -194,9 +210,9 @@ const AuthorData = [
         authorName: "Robert T. Kiyosaki",
         authorDescription: faker.lorem.paragraph(5),
         socials: {
-            twitter: "",
-            instagram: "",
-            facebook: ""
+            twitter: "https://twitter.com/rohan_gupta96",
+            instagram: "https://www.instagram.com/rohan_gupta94/",
+            facebook: "https://www.facebook.com/rohang9896"
         },
     },
     {
@@ -205,9 +221,9 @@ const AuthorData = [
         authorName: "Vicki Robin",
         authorDescription: faker.lorem.paragraph(5),
         socials: {
-            twitter: "",
-            instagram: "",
-            facebook: ""
+            twitter: "https://twitter.com/rohan_gupta96",
+            instagram: "https://www.instagram.com/rohan_gupta94/",
+            facebook: "https://www.facebook.com/rohang9896"
         },
     },
     {
@@ -216,9 +232,9 @@ const AuthorData = [
         authorName: "Peter Dunn",
         authorDescription: faker.lorem.paragraph(5),
         socials: {
-            twitter: "",
-            instagram: "",
-            facebook: ""
+            twitter: "https://twitter.com/rohan_gupta96",
+            instagram: "https://www.instagram.com/rohan_gupta94/",
+            facebook: "https://www.facebook.com/rohang9896"
         },
     },
     {
@@ -227,9 +243,9 @@ const AuthorData = [
         authorName: "Erin Lowry",
         authorDescription: faker.lorem.paragraph(5),
         socials: {
-            twitter: "",
-            instagram: "",
-            facebook: ""
+            twitter: "https://twitter.com/rohan_gupta96",
+            instagram: "https://www.instagram.com/rohan_gupta94/",
+            facebook: "https://www.facebook.com/rohang9896"
         },
     },
     {
@@ -238,9 +254,9 @@ const AuthorData = [
         authorName: "David Bach",
         authorDescription: faker.lorem.paragraph(5),
         socials: {
-            twitter: "",
-            instagram: "",
-            facebook: ""
+            twitter: "https://twitter.com/rohan_gupta96",
+            instagram: "https://www.instagram.com/rohan_gupta94/",
+            facebook: "https://www.facebook.com/rohang9896"
         },
     },
     {
@@ -249,19 +265,20 @@ const AuthorData = [
         authorName: "Napoleon Hill",
         authorDescription: faker.lorem.paragraph(5),
         socials: {
-            twitter: "",
-            instagram: "",
-            facebook: ""
+            twitter: "https://twitter.com/rohan_gupta96",
+            instagram: "https://www.instagram.com/rohan_gupta94/",
+            facebook: "https://www.facebook.com/rohang9896"
         },
     },
 ]
 
 const addBooksInAuthorsData = (AuthorData, BooksData) => {
     for(let i=0; i<AuthorData.length; i++) {
-        AuthorData[i].books = BooksData.filter(booksObj => booksObj.authorName === AuthorData[i].authorName)
+        AuthorData[i].books = BooksData.filter(book => book.authorName.toLowerCase() === AuthorData[i].authorName.toLowerCase())
     }
 }
 
 addBooksInAuthorsData(AuthorData, BooksData);
+
 
 export {BooksData, AuthorData}
