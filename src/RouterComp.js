@@ -32,7 +32,7 @@ export default function RouterComp() {
       />
       <Route
         path="/book"
-        element={<BooksGrid arrayToBeMapped={state.booksArr} />}
+        element={<BooksGrid addingNewBookOption arrayToBeMapped={state.booksArr} />}
       />
       <Route
         path="/book/:id"
