@@ -15,7 +15,7 @@ function AuthorsPage({
 
   const booksByThisAuthor = state.authorsArr.filter(
     (author) => author.id === id
-  )[0].books;
+  )[0]?.books;
 
   return (
     <>
@@ -30,14 +30,14 @@ function AuthorsPage({
           </div>
           <div className="AuthorsPage__socials">
             {console.log(socials)}
-            <a href={socials.twitter} target="_blank" rel="noopener noreferrer">
+            <a href={socials?.twitter} target="_blank" rel="noopener noreferrer">
               <img
                 alt="twitter"
                 src="http://assets.stickpng.com/images/580b57fcd9996e24bc43c53e.png"
               />
             </a>
             <a
-              href={socials.instagram}
+              href={socials?.instagram}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -47,7 +47,7 @@ function AuthorsPage({
               />
             </a>
             <a
-              href={socials.facebook}
+              href={socials?.facebook}
               target="_blank"
               rel="noopener noreferrer"
             >

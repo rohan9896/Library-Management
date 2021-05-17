@@ -11,7 +11,7 @@ function BooksGrid({ arrayToBeMapped, addingNewBookOption }) {
     <>
       <PrimaryHeading text="BOOKS" />
       <div className="CardsGrid">
-        {arrayToBeMapped.map((book) => (
+        {arrayToBeMapped?.map((book) => (
           <div key={book.id}>
             <BooksCard {...book} />
           </div>
