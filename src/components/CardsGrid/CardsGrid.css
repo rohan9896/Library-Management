@@ -1,9 +1,39 @@
 .CardsGrid {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
 }
 
 .CardsGrid > div {
-    margin: 1rem;
+  margin: 1rem;
+}
+
+.CardsGrid__Modal {
+  margin: 100px auto;
+  padding: 20px;
+  background: #fff;
+  border: 1px solid #666;
+  width: 300px;
+  border-radius: 6px;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+  position: fixed;
+}
+
+._2I1sI {
+    font-size: x-large;
+    cursor: pointer;
+}
+
+.CardsGrid__Modal > h1,
+input,
+button {
+  margin: 0.5rem;
+}
+
+button {
+  padding: 0.2rem 1rem;
+  color: white;
+  background-color: orange;
+  border-radius: 0.2rem;
+  margin: 0;
 }

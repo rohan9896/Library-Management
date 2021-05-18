@@ -29,7 +29,6 @@ function AuthorsPage({
             <p className="AuthorsPage__para">{authorDescription}</p>
           </div>
           <div className="AuthorsPage__socials">
-            {console.log(socials)}
             <a href={socials?.twitter} target="_blank" rel="noopener noreferrer">
               <img
                 alt="twitter"

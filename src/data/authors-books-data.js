@@ -1,4 +1,5 @@
-var faker = require("faker");
+import faker from "faker";
+import { addBooksInAuthorsData } from "../add-books-in-authors-arr";
 
 faker.seed(123);
 
@@ -281,15 +282,6 @@ const AuthorData = [
     },
   },
 ];
-
-const addBooksInAuthorsData = (AuthorData, BooksData) => {
-  for (let i = 0; i < AuthorData.length; i++) {
-    AuthorData[i].books = BooksData.filter(
-      (book) =>
-        book.authorName.toLowerCase() === AuthorData[i].authorName.toLowerCase()
-    );
-  }
-};
 
 addBooksInAuthorsData(AuthorData, BooksData);
 

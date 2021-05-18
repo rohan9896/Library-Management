@@ -3,6 +3,7 @@ import "./BookPage.css";
 import PrimaryHeading from "../PrimaryHeading/PrimaryHeading";
 
 function BookPage({ id, img, bookName, bookDescription, authorName, isbn }) {
+
   return (
     <>
       <PrimaryHeading text="Book's Details" />
