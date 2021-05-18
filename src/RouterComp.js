@@ -5,6 +5,8 @@ import AuthorsPage from "./components/AuthorsPage/AuthorsPage";
 import { useData } from "./Context/data-context";
 import BooksGrid from "./components/CardsGrid/BooksGrid";
 import BookPage from "./components/BookPage/BookPage";
+import { Button, Heading } from "@chakra-ui/react"
+import NavBar from "./components/NavBar/NavBar";
 
 export default function RouterComp() {
   const { state } = useData();
@@ -12,13 +14,14 @@ export default function RouterComp() {
 
   return (
     <Routes>
+      <NavBar />
       <Route
         path="/"
         element={
           <>
-            <h1>Landing page</h1>
-            <button onClick={() => navigate(`/author`)}>Authors</button>
-            <button onClick={() => navigate(`/book`)}>Books</button>
+            <Heading as="h2" size="2xl">Landing page</Heading>
+            <Button onClick={() => navigate(`/author`)} colorScheme="blue">Authors</Button>
+            <Button onClick={() => navigate(`/book`)} colorScheme="blue">Books</Button>
           </>
         }
       />

@@ -2,6 +2,7 @@ import React from "react";
 import "./AuthorCard.css";
 import { useNavigate } from "react-router-dom";
 import { useData } from "../../Context/data-context";
+import { Heading } from "@chakra-ui/layout";
 
 function AuthorCard({ authorName, authorImg, books, id }) {
   const { dispatch } = useData();
@@ -17,8 +18,8 @@ function AuthorCard({ authorName, authorImg, books, id }) {
       className="AuthorCard"
     >
       <img alt="author-img" src={authorImg} />
-      <h3>{authorName}</h3>
-      <span>Books available - {books.length}</span>
+      <Heading  as="h4" size="md" className="AuthorCard__Heading">{authorName}</Heading>
+      <p>Books available - {books.length}</p>
     </div>
   );
 }

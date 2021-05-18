@@ -14,17 +14,10 @@
   height: 20.5rem;
 }
 
-.BookPage__container > div {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  padding: 1rem;
-}
-
 @media screen and (min-width: 768px) {
   .BookPage__container {
     display: grid;
-    grid-template-columns: 1fr 5fr;
+    grid-template-columns: 2fr 5fr;
     column-gap: 1.5rem;
     margin: 0.5rem 2rem;
     width: 50rem;

@@ -8,6 +8,10 @@
   border: solid rgb(177, 177, 26) 3px;
 }
 
+.AuthorCard__Heading {
+  margin: 0.5rem;
+}
+
 .AuthorCard {
   display: flex;
   flex-direction: column;

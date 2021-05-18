@@ -1,6 +1,7 @@
 import React from "react";
 import "./BookPage.css";
 import PrimaryHeading from "../PrimaryHeading/PrimaryHeading";
+import { Box, Heading } from "@chakra-ui/react"
 
 function BookPage({ id, img, bookName, bookDescription, authorName, isbn }) {
 
@@ -10,11 +11,11 @@ function BookPage({ id, img, bookName, bookDescription, authorName, isbn }) {
       <div className="BookPage">
         <div className="BookPage__container">
           <img src={img} alt="book-img" />
-          <div>
-            <h1>
+          <Box d="flex" flexDirection="column" justifyContent="space-around" height="30rem" margin="0 1rem">
+            <Heading>
               {bookName}
               <br /> - by {authorName}
-            </h1>
+            </Heading>
             <p>
               <strong>About the book - </strong>
               <br />
@@ -24,7 +25,7 @@ function BookPage({ id, img, bookName, bookDescription, authorName, isbn }) {
               <strong>ISBN NO. - </strong>
               {isbn}
             </p>
-          </div>
+          </Box>
         </div>
       </div>
     </>
