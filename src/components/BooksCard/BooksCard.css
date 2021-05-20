@@ -1,35 +1,35 @@
 .BooksCard__Book {
-    width: 15rem;
-    height: 15rem;
-    max-width: 100%;
+  width: 15rem;
+  height: 15rem;
+  max-width: 100%;
 }
 
 .BooksCard {
-    width: 15rem;
-    height: 18rem;
-    display: flex;
-    flex-direction: column;
-    border: solid 1px rgb(182, 181, 181);
-    position: relative;
+  width: 15rem;
+  height: 18rem;
+  display: flex;
+  flex-direction: column;
+  border: solid 1px rgb(182, 181, 181);
+  position: relative;
 }
 
 .BooksCard:hover {
-    border: solid 2px rgb(15, 15, 15);
+  border: solid 2px rgb(15, 15, 15);
 }
 
 .BooksCard > span {
-    font-size: larger;
-    font-weight: 800;
-    margin: 0.7rem;
-    text-align: center;
-    cursor: pointer;
+  font-size: larger;
+  font-weight: 800;
+  margin: 0.7rem;
+  text-align: center;
+  cursor: pointer;
 }
 
 .BooksCard__delete {
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 2rem;
-    width: 2rem;
-    cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2rem;
+  width: 2rem;
+  cursor: pointer;
 }

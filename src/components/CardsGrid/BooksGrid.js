@@ -5,14 +5,14 @@ import PrimaryHeading from "../PrimaryHeading/PrimaryHeading";
 import "./CardsGrid.css";
 import { Modal } from "react-modal-overlay";
 import { useData } from "../../Context/data-context";
-import { Button, Input } from "@chakra-ui/react"
+import { Button, Input } from "@chakra-ui/react";
 
 function BooksGrid({ arrayToBeMapped, addingNewBookOption }) {
   const initialInpState = {
     bookName: "",
     img: "",
     authorName: "",
-    authorsImg: '',
+    authorsImg: "",
     isbn: "",
   };
 
@@ -50,9 +50,14 @@ function BooksGrid({ arrayToBeMapped, addingNewBookOption }) {
           style={{ display: isModalOpen ? null : "none" }}
           className="CardsGrid__Modal"
         >
-          <Modal style={{position: "relative"}} show={isModalOpen} closeModal={() => setIsModalOpen(false)}>
+          <Modal
+            style={{ position: "relative" }}
+            show={isModalOpen}
+            closeModal={() => setIsModalOpen(false)}
+          >
             <h1 className="CardsGrid__Modal__heading">Enter Book Data</h1>
-            <Input variant="flushed"
+            <Input
+              variant="flushed"
               value={newBookData.bookName}
               onChange={(e) =>
                 setNewBookData({
@@ -63,7 +68,8 @@ function BooksGrid({ arrayToBeMapped, addingNewBookOption }) {
               type="text"
               placeholder="Book Name"
             />
-            <Input variant="flushed"
+            <Input
+              variant="flushed"
               value={newBookData.img}
               onChange={(e) =>
                 setNewBookData({
@@ -74,7 +80,8 @@ function BooksGrid({ arrayToBeMapped, addingNewBookOption }) {
               type="text"
               placeholder="Book's image URL"
             />
-            <Input variant="flushed"
+            <Input
+              variant="flushed"
               value={newBookData.authorName}
               onChange={(e) =>
                 setNewBookData({
@@ -86,12 +93,21 @@ function BooksGrid({ arrayToBeMapped, addingNewBookOption }) {
               placeholder="Author's name"
             />
             {!thisAuthorExists && (
-              <Input variant="flushed" placeholder="Author's img URL" type="text" value={newBookData.authorsImg} onChange={(e) => setNewBookData({
-                ...newBookData,
-                authorsImg: e.target.value
-              })} />
+              <Input
+                variant="flushed"
+                placeholder="Author's img URL"
+                type="text"
+                value={newBookData.authorsImg}
+                onChange={(e) =>
+                  setNewBookData({
+                    ...newBookData,
+                    authorsImg: e.target.value,
+                  })
+                }
+              />
             )}
-            <Input variant="flushed"
+            <Input
+              variant="flushed"
               value={newBookData.isbn}
               onChange={(e) =>
                 setNewBookData({
@@ -109,7 +125,7 @@ function BooksGrid({ arrayToBeMapped, addingNewBookOption }) {
             )}
             <br />
             <Button
-              style={{margin: "1rem"}}
+              style={{ margin: "1rem" }}
               onClick={() => {
                 dispatch({ type: "ADD_NEW_BOOK", payload: newBookData });
                 setNewBookData(initialInpState);

@@ -29,7 +29,11 @@ function AuthorsPage({
             <p className="AuthorsPage__para">{authorDescription}</p>
           </div>
           <div className="AuthorsPage__socials">
-            <a href={socials?.twitter} target="_blank" rel="noopener noreferrer">
+            <a
+              href={socials?.twitter}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img
                 alt="twitter"
                 src="http://assets.stickpng.com/images/580b57fcd9996e24bc43c53e.png"

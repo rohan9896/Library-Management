@@ -1,32 +1,32 @@
 .NavBar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: cadetblue;
-    color: white;
-    font-weight: 800;
-    font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: cadetblue;
+  color: white;
+  font-weight: 800;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .NavBar__routes {
-    list-style: none;
-    display: flex;
+  list-style: none;
+  display: flex;
 }
 
 .NavBar__routes > li {
-    margin: 1rem;
+  margin: 1rem;
 }
 
 .NavBar__login {
-    margin: 1rem;
+  margin: 1rem;
 }
 
 @media screen and (min-width: 768px) {
-    .NavBar__routes > li {
-        margin: 1.5rem 2rem;
-    }
-    
-    .NavBar__login {
-        margin: 1.5rem 3rem;
-    }
+  .NavBar__routes > li {
+    margin: 1.5rem 2rem;
+  }
+
+  .NavBar__login {
+    margin: 1.5rem 3rem;
+  }
 }
