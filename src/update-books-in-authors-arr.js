@@ -1,4 +1,4 @@
-export const addBooksInAuthorsData = (AuthorData, BooksData) => {
+export const updateBooksInAuthorsData = (AuthorData, BooksData) => {
   for (let i = 0; i < AuthorData.length; i++) {
     AuthorData[i].books = BooksData.filter(
       (book) =>

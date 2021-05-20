@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
-.AuthorCard > img {
+.AuthorCard__author {
   width: 10rem;
   height: 10rem;
   max-width: 100%;
@@ -23,9 +23,18 @@
   max-width: 100%;
   background-color: white;
   cursor: pointer;
+  position: relative;
 }
 
 .AuthorCard:hover {
   border-radius: 1.5rem;
   box-shadow: 20px 20px 60px #cccecf;
+}
+
+.AuthorCard__delete {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2rem;
+  width: 2rem;
 }

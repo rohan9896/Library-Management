@@ -2,6 +2,7 @@ import React from "react";
 import "./BooksCard.css";
 import { useNavigate } from "react-router-dom";
 import { useData } from "../../Context/data-context";
+import deleteImg from "../../img/remove.svg"
 
 function BooksCard({ id, img, bookName }) {
   const navigate = useNavigate();
@@ -17,14 +18,14 @@ function BooksCard({ id, img, bookName }) {
 
   return (
     <div
-      onClick={() => {
-        navigate(`/book/${id}`);
-        dispatch({ type: "OPEN_BOOK_DETAILS", payload: id });
-      }}
       className="BooksCard"
     >
-      <img src={img} alt="book-img" />
-      <span>{newBookName(bookName)}</span>
+      <img src={img} className="BooksCard__Book" alt="book-img" />
+      <span onClick={() => {
+        navigate(`/book/${id}`);
+        dispatch({ type: "OPEN_BOOK_DETAILS", payload: id });
+      }}>{newBookName(bookName)}</span>
+      <img onClick={() => dispatch({type: "DELETE_BOOK", payload: id})} className="BooksCard__delete" src={deleteImg} alt="delete" />
     </div>
   );
 }

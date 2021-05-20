@@ -1,5 +1,5 @@
 import faker from "faker";
-import { addBooksInAuthorsData } from "../add-books-in-authors-arr";
+import { updateBooksInAuthorsData } from "../update-books-in-authors-arr";
 
 faker.seed(123);
 
@@ -283,6 +283,6 @@ const AuthorData = [
   },
 ];
 
-addBooksInAuthorsData(AuthorData, BooksData);
+updateBooksInAuthorsData(AuthorData, BooksData);
 
 export { BooksData, AuthorData };
