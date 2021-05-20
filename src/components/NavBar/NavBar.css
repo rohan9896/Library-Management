@@ -1,0 +1,22 @@
+.NavBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: cadetblue;
+    color: white;
+    font-weight: 800;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.NavBar__routes {
+    list-style: none;
+    display: flex;
+}
+
+.NavBar__routes > li {
+    margin: 1.5rem 2rem;
+}
+
+.NavBar__login {
+    margin: 1.5rem 3rem;
+}

@@ -1,27 +1,16 @@
 import React from "react";
-import {
-  Breadcrumb,
-  BreadcrumbItem,
-  BreadcrumbLink,
-} from "@chakra-ui/react";
+import "./NavBar.css"
 import {Link} from "react-router-dom"
 
 function NavBar() {
   return (
-    <div>
-      <Breadcrumb separator="-">
-        <BreadcrumbItem>
-          <BreadcrumbLink as={Link} to="/">Home</BreadcrumbLink>
-        </BreadcrumbItem>
-
-        <BreadcrumbItem>
-          <BreadcrumbLink as={Link} to="/author">Authors</BreadcrumbLink>
-        </BreadcrumbItem>
-
-        <BreadcrumbItem isCurrentPage>
-          <BreadcrumbLink as={Link} to="/book">Books</BreadcrumbLink>
-        </BreadcrumbItem>
-      </Breadcrumb>
+    <div className="NavBar">
+      <ul className="NavBar__routes">
+        <li><Link to="/">HOME</Link></li>
+        <li><Link to="/author">AUTHORS</Link></li>
+        <li><Link to="book">BOOKS</Link></li>
+      </ul>
+      <span className="NavBar__login">Login</span>
     </div>
   );
 }
