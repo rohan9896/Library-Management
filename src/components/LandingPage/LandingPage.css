@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+.LandingPage {
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+}
+
+.LandingPage__left, .LandingPage__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.LandingPage__left > p {
+    margin: 1rem 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+.LandingPage__left__name {
+    font-size: 3rem;
+    color: #3B82F6;
+    font-weight: 800;
+}
+
+.LandingPage__left__details {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 1.5rem 0.5rem;
+}
+
+@media screen and (min-width: 768px) {
+    .LandingPage {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 90vh;
+        margin: 0 3rem;
+    }
+    .LandingPage__left__name {
+        font-size: 4.5rem;
+    }
+}

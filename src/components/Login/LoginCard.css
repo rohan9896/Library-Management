@@ -1,0 +1,10 @@
+.LoginCard__Box {
+    max-width: 20rem;
+    padding: 1rem;
+    border: solid rgb(218, 216, 216) 2px;
+    border-radius: 1.2rem;
+}
+
+.LoginCard__Input, .LoginCard__Button {
+    margin: 1rem 0;
+}

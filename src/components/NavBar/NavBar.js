@@ -16,7 +16,9 @@ function NavBar() {
           <Link to="book">BOOKS</Link>
         </li>
       </ul>
-      <span className="NavBar__login">Login</span>
+      <span className="NavBar__login">
+        <Link to="/login">Login</Link>
+      </span>
     </div>
   );
 }
