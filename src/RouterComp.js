@@ -7,6 +7,7 @@ import BookPage from "./components/BookPage/BookPage";
 import LoginForm from "./components/Login/LoginForm";
 import LandingPage from "./components/LandingPage/LandingPage";
 import PrivateRoute from "./components/PrivateRoute";
+import SignUpForm from "./components/Login/SignUpForm";
 
 export default function RouterComp() {
   const { state } = useData();
@@ -16,6 +17,7 @@ export default function RouterComp() {
     <Routes>
       <Route path="/" element={<LandingPage />} />
       <Route path="/login" element={<LoginForm />} />
+      <Route path="/signup" element={<SignUpForm />} />
       <PrivateRoute
         path="/author"
         element={<AuthorsGrid arrayToBeMapped={state.authorsArr} />}

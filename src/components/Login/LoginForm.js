@@ -1,6 +1,6 @@
 import React from 'react'
 import LoginCard from './LoginCard'
-import "./LoginForm.css"
+import "./LoginFormAndSignUpForm.css"
 
 function LoginForm() {
     return (
