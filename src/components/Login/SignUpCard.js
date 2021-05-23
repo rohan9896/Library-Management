@@ -9,12 +9,13 @@ import {
   FormErrorMessage,
 } from "@chakra-ui/react";
 import { useAuth } from "../../Context/auth-context";
+import { Link } from "react-router-dom";
 
 function SignUpCard() {
   const emailRef = useRef();
   const passwordRef = useRef();
   const passwordConfirmRef = useRef();
-  const { signUp, currentUser } = useAuth();
+  const { signUp } = useAuth();
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
 
@@ -29,9 +30,9 @@ function SignUpCard() {
       setError("");
       setLoading(true);
       await signUp(emailRef.current.value, passwordRef.current.value);
-    } catch(err) {
-      console.error(err)
-      setError("Failed to create an account");
+    } catch (err) {
+      console.error(err);
+      setError(err.message);
     }
 
     setLoading(false);
@@ -40,25 +41,17 @@ function SignUpCard() {
   return (
     <Box className="SignUpCard__Box">
       <form onSubmit={handleSubmit}>
-        <FormControl className="SignUpCard__Input" ref={emailRef} id="email">
+        <FormControl className="SignUpCard__Input" id="email">
           <FormLabel>Email address</FormLabel>
-          <Input type="email" isRequired />
+          <Input ref={emailRef} type="email" isRequired />
         </FormControl>
-        <FormControl
-          className="SignUpCard__Input"
-          ref={passwordRef}
-          id="password"
-        >
+        <FormControl className="SignUpCard__Input" id="password">
           <FormLabel>Password</FormLabel>
-          <Input type="password" isRequired />
+          <Input ref={passwordRef} type="password" isRequired />
         </FormControl>
-        <FormControl
-          className="SignUpCard__Input"
-          ref={passwordConfirmRef}
-          id="password"
-        >
+        <FormControl className="SignUpCard__Input" id="password-confirm">
           <FormLabel>Confirm Password</FormLabel>
-          <Input type="password" isRequired />
+          <Input ref={passwordConfirmRef} type="password" isRequired />
           {error && <FormErrorMessage>{error}</FormErrorMessage>}
         </FormControl>
         <Button
@@ -69,8 +62,11 @@ function SignUpCard() {
         >
           SIGN UP
         </Button>
+        {error && <p style={{color: "red"}}>{error}</p>}
+        <p>
+          Already have an account? <strong><Link to="/login">LOGIN</Link></strong>
+        </p>
       </form>
-      {currentUser && currentUser.email}
     </Box>
   );
 }
