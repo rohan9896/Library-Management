@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
 import "./LoginCardAndSignUpCard.css";
 import { Box, Button, Input, FormControl, FormLabel } from "@chakra-ui/react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useAuth } from "../../Context/auth-context";
 
 function LoginCard() {
@@ -10,6 +10,8 @@ function LoginCard() {
   const { login } = useAuth();
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
+  const { state } = useLocation();
+  const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -18,6 +20,7 @@ function LoginCard() {
       setError("");
       setLoading(true);
       await login(emailRef.current.value, passwordRef.current.value);
+      navigate(state.from);
     } catch (err) {
       console.error(err);
       setError(err.message);
@@ -25,8 +28,6 @@ function LoginCard() {
 
     setLoading(false);
   };
-
-  console.log({ loading });
 
   return (
     <Box className="LoginCard__Box">
@@ -49,10 +50,7 @@ function LoginCard() {
         </Button>
         <hr />
         <Link to="/signup">
-          <Button
-            className="LoginCard__Button"
-            colorScheme="green"
-          >
+          <Button className="LoginCard__Button" colorScheme="green">
             Create New Account
           </Button>
         </Link>

@@ -1,8 +1,12 @@
 import React from "react";
 import { Route, Navigate } from "react-router-dom";
 
-function PrivateRoute({ login, ...props }) {
-  return login ? <Route {...props} /> : <Navigate replace to="/login" />;
+function PrivateRoute({ login, path, ...props }) {
+  return login ? (
+    <Route path={path} {...props} />
+  ) : (
+    <Navigate state={{ from: path }} replace to="/login" />
+  );
 }
 
 export default PrivateRoute;
