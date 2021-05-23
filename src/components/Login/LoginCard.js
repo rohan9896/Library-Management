@@ -13,6 +13,8 @@ function LoginCard() {
   const { state } = useLocation();
   const navigate = useNavigate();
 
+  const originalRoute = state ? state.from : '/'
+
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -20,7 +22,7 @@ function LoginCard() {
       setError("");
       setLoading(true);
       await login(emailRef.current.value, passwordRef.current.value);
-      navigate(state.from);
+      navigate(originalRoute);
     } catch (err) {
       console.error(err);
       setError(err.message);

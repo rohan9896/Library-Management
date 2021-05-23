@@ -26,6 +26,7 @@ function SignUpCard() {
 
     if (passwordRef.current.value !== passwordConfirmRef.current.value) {
       setError("Passwords do not match");
+      return;
     }
 
     try {
