@@ -8,10 +8,12 @@ import LoginForm from "./components/Login/LoginForm";
 import LandingPage from "./components/LandingPage/LandingPage";
 import PrivateRoute from "./components/PrivateRoute";
 import SignUpForm from "./components/Login/SignUpForm";
+import { useAuth } from "./Context/auth-context";
 
 export default function RouterComp() {
   const { state } = useData();
-  const isUserLoggedIn = false;
+  const { currentUser } = useAuth();
+  const isUserLoggedIn = currentUser ? true : false
 
   return (
     <Routes>

@@ -7,9 +7,13 @@ export default function AuthContextProvider({ children }) {
   const [currentUser, setCurrentUser] = useState();
   const [loading, setLoading] = useState(true);
 
-  const signUp = (email, password) => {
-    return auth.createUserWithEmailAndPassword(email, password);
-  };
+  const signUp = (email, password) =>
+    auth.createUserWithEmailAndPassword(email, password);
+
+  const login = (email, password) =>
+    auth.signInWithEmailAndPassword(email, password);
+
+  const logout = () => auth.signOut();
 
   useEffect(() => {
     //TODO- read about onAuthStateChanged
@@ -24,6 +28,8 @@ export default function AuthContextProvider({ children }) {
   const value = {
     currentUser,
     signUp,
+    login,
+    logout,
   };
 
   return (

@@ -6,7 +6,9 @@ import {
   Input,
   FormControl,
   FormLabel,
-  FormErrorMessage,
+  Alert,
+  AlertIcon,
+  AlertTitle,
 } from "@chakra-ui/react";
 import { useAuth } from "../../Context/auth-context";
 import { Link } from "react-router-dom";
@@ -15,7 +17,7 @@ function SignUpCard() {
   const emailRef = useRef();
   const passwordRef = useRef();
   const passwordConfirmRef = useRef();
-  const { signUp } = useAuth();
+  const { signUp, currentUser } = useAuth();
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
 
@@ -52,7 +54,6 @@ function SignUpCard() {
         <FormControl className="SignUpCard__Input" id="password-confirm">
           <FormLabel>Confirm Password</FormLabel>
           <Input ref={passwordConfirmRef} type="password" isRequired />
-          {error && <FormErrorMessage>{error}</FormErrorMessage>}
         </FormControl>
         <Button
           isLoading={loading}
@@ -62,11 +63,17 @@ function SignUpCard() {
         >
           SIGN UP
         </Button>
-        {error && <p style={{color: "red"}}>{error}</p>}
+        {error && 
+        <Alert status="error">
+          <AlertIcon />
+          <AlertTitle mr={1}>{error}</AlertTitle>
+        </Alert>
+        }
         <p>
           Already have an account? <strong><Link to="/login">LOGIN</Link></strong>
         </p>
       </form>
+      {console.log({currentUser})}
     </Box>
   );
 }

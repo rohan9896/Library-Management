@@ -17,7 +17,7 @@
   margin: 1rem 0.5rem;
 }
 
-.NavBar__login {
+.NavBar__loginLogout {
   margin: 1rem 0.5rem;
 }
 
@@ -26,7 +26,7 @@
     margin: 1.5rem 2rem;
   }
 
-  .NavBar__login {
+  .NavBar__loginLogout {
     margin: 1.5rem 3rem;
   }
 }
